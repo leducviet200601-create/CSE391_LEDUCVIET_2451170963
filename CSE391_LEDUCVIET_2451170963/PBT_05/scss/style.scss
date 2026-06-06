@@ -1,0 +1,45 @@
+@import "variables";
+@import "mixins";
+@import "components";
+
+body {
+  font-family: $font-primary;
+  background: $bg-color;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+}
+
+/* GRID LAYOUT */
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $spacing-md;
+  padding: $spacing-md;
+
+  @include respond($breakpoint-tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include respond($breakpoint-desktop) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* HEADER */
+.header {
+  background: $primary-color;
+  color: white;
+  padding: $spacing-md;
+  @include flex-center;
+  justify-content: space-between;
+}
+
+/* BUTTON GLOBAL */
+button {
+  transition: 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}

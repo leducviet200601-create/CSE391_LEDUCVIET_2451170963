@@ -1,0 +1,50 @@
+.card {
+  background: white;
+  padding: $spacing-md;
+  border: 1px solid #ddd;
+  transition: 0.3s ease;
+
+  .card-image {
+    width: 100%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      transition: transform 0.3s ease;
+    }
+  }
+
+  .card-title {
+    font-size: 18px;
+    color: $text-color;
+    margin-top: $spacing-sm;
+  }
+
+  .card-price {
+    color: $accent-color;
+    margin-top: $spacing-sm;
+  }
+
+  .card-button {
+    margin-top: $spacing-md;
+    padding: $spacing-sm $spacing-md;
+    border: none;
+    background: $primary-color;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    @include card-shadow;
+  }
+
+  &.featured {
+    border: 2px solid $secondary-color;
+  }
+
+  &:hover .card-image img {
+    transform: scale(1.1);
+  }
+}
