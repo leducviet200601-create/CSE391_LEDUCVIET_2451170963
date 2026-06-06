@@ -1,0 +1,86 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== GRID LAYOUT CHÍNH ===== */
+.layout {
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-areas:
+    "header header header"
+    "hero hero hero"
+    "sidebar main ads"
+    "footer footer footer";
+  gap: 15px;
+  min-height: 100vh;
+}
+
+/* ===== AREAS ===== */
+
+.header {
+  grid-area: header;
+  background: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.hero {
+  grid-area: hero;
+  background: #f39c12;
+  padding: 30px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background: #f4f4f4;
+  padding: 15px;
+}
+
+.ads {
+  grid-area: ads;
+  background: #f4f4f4;
+  padding: 15px;
+}
+
+.footer {
+  grid-area: footer;
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* ===== MAIN CONTENT ===== */
+.main {
+  grid-area: main;
+}
+
+/* PRODUCT GRID (nested grid) */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+/* hover */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
