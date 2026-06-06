@@ -1,0 +1,53 @@
+.container {
+  width: 960px;
+  margin: 0 auto;
+  border: 2px solid #000;
+}
+
+/* ===== PROBLEM VERSION ===== */
+/*
+.sidebar {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  float: left;
+}
+
+.content {
+  width: 660px;
+  padding: 30px;
+  border: 1px solid #ccc;
+  float: left;
+}
+*/
+
+/* ===== FIX 1: border-box ===== */
+
+* {
+  box-sizing: border-box;
+}
+
+.sidebar {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  float: left;
+}
+
+.content {
+  width: 660px;
+  padding: 30px;
+  border: 1px solid #ccc;
+  float: left;
+}
+
+/* ===== FIX 2 (alternative không dùng border-box) ===== */
+/*
+.sidebar {
+  width: 278px;
+}
+
+.content {
+  width: 642px;
+}
+*/
