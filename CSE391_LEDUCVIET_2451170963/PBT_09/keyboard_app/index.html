@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Keyboard App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Keyboard App</h1>
+
+<!-- GALLERY -->
+<div class="gallery">
+    <img id="mainImg" src="https://placehold.co/600x300" alt="image">
+    <p>← → để chuyển ảnh | 1-9 để nhảy | Space play/pause | Esc đóng modal</p>
+</div>
+
+<!-- COMMAND PALETTE -->
+<div id="palette" class="hidden">
+    <input id="cmdInput" placeholder="Type command...">
+    <ul id="cmdList"></ul>
+</div>
+
+<button id="openPalette">Ctrl + K</button>
+
+<!-- MODAL -->
+<div id="modal" class="modal hidden">
+    <div class="modal-box">
+        <img id="modalImg" src="">
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

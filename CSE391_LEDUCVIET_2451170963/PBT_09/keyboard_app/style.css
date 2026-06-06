@@ -1,0 +1,46 @@
+body {
+    font-family: Arial;
+    text-align: center;
+}
+
+.gallery img {
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* COMMAND PALETTE */
+#palette {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+#cmdInput {
+    width: 100%;
+    padding: 8px;
+}
+
+/* MODAL */
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-box img {
+    width: 80%;
+    border-radius: 10px;
+}
