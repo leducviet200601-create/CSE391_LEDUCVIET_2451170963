@@ -175,3 +175,38 @@ Gửi dữ liệu giả lên server
 Hacker bypass HTML validation
 SQL Injection / Data corruption
 Input độc hại vẫn có thể lọt vào backend
+
+Bài B1:
+# ANSWERS - B1
+## 1. Vì sao HTML không validate được confirm password?
+
+HTML không thể so sánh giá trị giữa 2 input khác nhau.
+Validation HTML chỉ làm việc trên từng field độc lập, không có logic so sánh.
+
+=> Cần JavaScript để kiểm tra password === confirm password.
+
+---
+
+## 2. Giải thích pattern quan trọng
+
+- Phone: [0-9]{10} → đúng 10 chữ số
+- Username: [A-Za-z0-9_]{3,20} → chữ, số, _
+- Password: (?=.*[A-Z])(?=.*[0-9]).{8,}
+  → ít nhất 1 chữ hoa + 1 số + tối thiểu 8 ký tự
+
+---
+
+## 3. Input types sử dụng (>= 7 types)
+
+- text
+- email
+- tel
+- date
+- password
+- radio
+- checkbox
+- textarea
+- select
+- button
+
+=> Đủ yêu cầu đa dạng input types
