@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Catalog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Product Catalog</h1>
+
+    <input id="search" placeholder="Search...">
+
+    <select id="sort">
+        <option value="">Sort</option>
+        <option value="asc">Giá tăng</option>
+        <option value="desc">Giá giảm</option>
+        <option value="az">A-Z</option>
+        <option value="rating">Rating</option>
+    </select>
+
+    <button id="toggleDark">Dark Mode</button>
+</header>
+
+<div class="categories">
+    <button data-cat="all">All</button>
+    <button data-cat="phone">Phone</button>
+    <button data-cat="laptop">Laptop</button>
+    <button data-cat="tablet">Tablet</button>
+    <button data-cat="accessory">Accessory</button>
+</div>
+
+<div id="products"></div>
+
+<!-- Modal -->
+<div id="modal" class="modal hidden">
+    <div class="modal-content">
+        <span id="closeModal">X</span>
+        <div id="modalBody"></div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

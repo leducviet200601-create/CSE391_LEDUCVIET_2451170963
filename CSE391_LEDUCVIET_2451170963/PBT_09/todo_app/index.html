@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Todo App</h1>
+
+    <form id="todoForm">
+        <input id="todoInput" type="text" placeholder="Nhập todo...">
+        <button>Add</button>
+    </form>
+
+    <div class="filters">
+        <button data-filter="all">All</button>
+        <button data-filter="active">Active</button>
+        <button data-filter="completed">Completed</button>
+        <button id="clearCompleted">Clear Completed</button>
+    </div>
+
+    <p id="count">0 items left</p>
+
+    <ul id="todoList"></ul>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
