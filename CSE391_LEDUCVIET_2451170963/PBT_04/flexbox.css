@@ -1,0 +1,87 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #222;
+  color: white;
+}
+
+/* LOGO */
+.logo {
+  font-weight: bold;
+}
+
+/* MENU (giữa) */
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+  color: yellow;
+}
+
+/* AUTH */
+.auth button {
+  margin-left: 10px;
+  padding: 5px 10px;
+}
+
+/* ===== PRODUCT GRID ===== */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* CARD */
+.card {
+  flex: 0 0 calc(25% - 20px);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  padding: 10px;
+  background: #fff;
+  transition: 0.3s;
+}
+
+/* CARD HOVER */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* IMAGE */
+.card img {
+  width: 100%;
+}
+
+/* BUTTON luôn xuống đáy */
+.buy {
+  margin-top: auto;
+  padding: 8px;
+  background: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.buy:hover {
+  background: black;
+}
