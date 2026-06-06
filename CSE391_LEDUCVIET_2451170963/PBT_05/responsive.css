@@ -1,0 +1,119 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial;
+}
+
+/* HEADER (MOBILE) */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #222;
+  color: white;
+}
+
+.nav {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.menu-toggle {
+  display: block;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 22px;
+}
+
+/* SIDEBAR ẨN MOBILE */
+.sidebar {
+  display: none;
+}
+
+/* ADS ẨN MOBILE */
+.ads {
+  display: none;
+}
+
+/* GRID MOBILE (1 cột) */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  padding: 15px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+/* FOOTER */
+.footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* ===== TABLET ===== */
+@media (min-width: 768px) {
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .sidebar {
+    display: block;
+    padding: 15px;
+  }
+
+  .ads {
+    display: none;
+  }
+
+  .layout {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+/* ===== DESKTOP ===== */
+@media (min-width: 1024px) {
+
+  .layout {
+    grid-template-columns: 200px 1fr 200px;
+  }
+
+  .ads {
+    display: block;
+    padding: 15px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  body {
+    font-size: 16px;
+  }
+}
